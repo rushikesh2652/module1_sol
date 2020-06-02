@@ -1,9 +1,9 @@
 (function(){
 	angular.module('mySol',[])
 
-	.controller('MyController',MyController);
+	.controller('LaunchCheckController',LaunchCheckController);
 	MyController.$inject=['$scope'];
-	function MyController($scope){
+	function LaunchCheckController($scope){
 
 		$scope.items="";
 		$scope.check=function(){
