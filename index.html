@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mySol">
 <head>
 	<title>Eatting is right or wrong</title>
+	<script src="angular.min.js"></script>
+	<script src="ang.js"></script>
 </head>
 <body>
-<div>
+<div ng-controller="MyController">
 	<h3>Enter items you eat for lunch :</h3>
-	<input type="text">
+	<input type="text" ng-model="items">
 	<br>
-	{{message}}
+	<br>
+	<button ng-click="check()">Check If Too Much</button>
+	<br>
+	<br>
+	{{Message}}
 </div>
 </body>
 </html>
